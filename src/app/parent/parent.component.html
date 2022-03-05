@@ -2,4 +2,6 @@
 
 <button (click)="toggleChild()">Toggle Child</button>
 
-<app-child *ngIf="isChild"></app-child>
+<input type="text" [(ngModel)]="channelName">
+
+<app-child *ngIf="isChild" [channelName]="channelName"></app-child>
